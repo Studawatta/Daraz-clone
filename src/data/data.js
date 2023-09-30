@@ -32,7 +32,7 @@ const categories = [
       'TV & Video Devices',
       'Home Audio',
       'TV Accessories',
-      'Washing Machines',
+      'Wshing Machines',
       'Refrigerators',
       'Gas Burners',
       'Sewing Machine',
