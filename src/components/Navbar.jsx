@@ -1,6 +1,5 @@
 import React from 'react';
-import logo from '../assets/logo.png';
-import logoIcon from '../assets/logoIcon.png';
+import { logo, logoIcon } from '../assets';
 import { BiSearch } from 'react-icons/bi';
 import { BsPerson } from 'react-icons/bs';
 import { TfiWorld } from 'react-icons/tfi';
