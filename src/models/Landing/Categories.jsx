@@ -6,7 +6,6 @@ const Categories = () => {
   const [showSubCategory, setShowSubCategory] = useState(false);
   const [category, setCategory] = useState('');
   const selectedCategory = categories.find((ctgry) => ctgry.name === category);
-  console.log(selectedCategory);
   return (
     <div>
       {/* CATEGORY CONTAINER */}
