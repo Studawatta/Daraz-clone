@@ -8,7 +8,7 @@ const App = () => {
       <Navbar />
       <div className="px-40 m-auto bg-[#f6f6f6]">
         <Landing />
-        <div className="h-20"></div>
+        <div className="h-60"></div>
       </div>
     </div>
   );
