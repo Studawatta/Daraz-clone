@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { categories } from '../data/data';
+import { categories } from '../data/categories';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 
 const Categories = () => {

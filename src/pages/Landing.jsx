@@ -2,6 +2,8 @@ import React from 'react';
 import ImageSlider from '../components/ImageSlider';
 import Categories from '../components/Categories';
 import QuickLinks from '../models/Landing/QuickLinks';
+import FlashSale from '../models/Landing/FlashSale';
+import DarazMall from '../models/Landing/DarazMall';
 
 const Landing = () => {
   return (
@@ -11,6 +13,8 @@ const Landing = () => {
         <ImageSlider />
       </div>
       <QuickLinks />
+      <FlashSale />
+      <DarazMall />
     </div>
   );
 };
