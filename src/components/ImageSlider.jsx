@@ -45,29 +45,29 @@ const ImageSlider = () => {
   const slideNext = () => {
     if (counter < sliderImages.length - 1) {
       sliderImages[counter].current.style.animation =
-        'next01 1s ease-in forwards';
+        'next01 0.5s ease-in forwards';
       sliderImages[counter + 1].current.style.animation =
-        'next02 1s ease-in forwards';
+        'next02 0.5s ease-in forwards';
       setCounter(counter + 1);
     } else {
-      sliderImages[0].current.style.animation = 'next02 1s ease-in forwards';
+      sliderImages[0].current.style.animation = 'next02 0.5s ease-in forwards';
       sliderImages[sliderImages.length - 1].current.style.animation =
-        'next01 1s ease-in forwards';
+        'next01 0.5s ease-in forwards';
       setCounter(0);
     }
   };
 
   const slidePrev = () => {
     sliderImages[counter].current.style.animation =
-      'prev01 1s ease-in forwards';
+      'prev01 0.5s ease-in forwards';
 
     if (counter === 0) {
       sliderImages[sliderImages.length - 1].current.style.animation =
-        ' prev02 1s ease-in forwards';
+        ' prev02 0.5s ease-in forwards';
       setCounter(sliderImages.length - 1);
     } else {
       sliderImages[counter - 1].current.style.animation =
-        'prev02 1s ease-in forwards';
+        'prev02 0.5s ease-in forwards';
       setCounter(counter - 1);
     }
   };
@@ -75,7 +75,7 @@ const ImageSlider = () => {
   useEffect(() => {
     setTimeout(() => {
       slideNext();
-    }, 3000);
+    }, 4000);
   });
 
   return (

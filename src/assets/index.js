@@ -29,6 +29,26 @@ import tagIcon from './icons/tagIcon.png';
 import techIcon from './icons/techIcon.png';
 import vanIcon from './icons/vanIcon.png';
 
+import coconut_scraper from './images/flashSale/coconut_scraper.jpg';
+import dishwash_liquid from './images/flashSale/dishwash_liquid.jpg';
+import rubber_shoe from './images/flashSale/rubber_shoe.jpg';
+import underwear from './images/flashSale/underwear.jpg';
+import smartwatch from './images/flashSale/smartwatch.jpg';
+import wallet from './images/flashSale/wallet.jpg';
+
+import echidna from './images/darazMall/echidna.png';
+import echidnaLogo from './images/darazMall/echidnaLogo.jpg';
+import hcaxy from './images/darazMall/hcaxy.png';
+import hcaxyLogo from './images/darazMall/hcaxyLogo.jpg';
+import liveLife from './images/darazMall/liveLife.png';
+import liveLifeLogo from './images/darazMall/liveLifeLogo.png';
+import marvel from './images/darazMall/marvel.png';
+import marvelLogo from './images/darazMall/marvelLogo.jpg';
+import promate from './images/darazMall/promate.png';
+import promateLogo from './images/darazMall/promateLogo.png';
+import YFashion from './images/darazMall/YFashion.png';
+import YFashionLogo from './images/darazMall/YFashionLogo.jpg';
+
 export {
   logo,
   promotion,
@@ -57,4 +77,22 @@ export {
   tagIcon,
   techIcon,
   vanIcon,
+  coconut_scraper,
+  dishwash_liquid,
+  rubber_shoe,
+  underwear,
+  smartwatch,
+  wallet,
+  echidna,
+  echidnaLogo,
+  hcaxy,
+  hcaxyLogo,
+  liveLife,
+  liveLifeLogo,
+  marvel,
+  marvelLogo,
+  promate,
+  promateLogo,
+  YFashion,
+  YFashionLogo,
 };
