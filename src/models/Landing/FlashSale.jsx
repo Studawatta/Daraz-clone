@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { flashSale } from '../../data/flashSale';
+import { flashSale } from '../../data/flashSale/flashSale';
 
 const FlashSale = () => {
   const [hours, setHours] = useState();

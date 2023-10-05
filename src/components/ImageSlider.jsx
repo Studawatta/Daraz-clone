@@ -3,7 +3,6 @@ import {
   MdOutlineKeyboardArrowLeft,
   MdOutlineKeyboardArrowRight,
 } from 'react-icons/md';
-
 import {
   slide01,
   slide02,
@@ -13,7 +12,7 @@ import {
   slide06,
   slide07,
   slide08,
-} from '../assets';
+} from '../assets/images/slider';
 
 const ImageSlider = () => {
   const [counter, setCounter] = useState(0);
