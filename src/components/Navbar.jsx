@@ -1,5 +1,6 @@
 import React from 'react';
-import { logo, logoIcon } from '../assets';
+import logo from '../assets/logo.png';
+import { logoIcon } from '../assets/icons';
 import { BiSearch } from 'react-icons/bi';
 import { BsPerson } from 'react-icons/bs';
 import { TfiWorld } from 'react-icons/tfi';
@@ -12,7 +13,7 @@ const Navbar = () => {
     'flex items-center gap-2 font-bold px-2 py-1 rounded-md hover:bg-[#cc4b00] cursor-pointer text-white';
   const helpItemStyle = ' hover:text-navbarBackground hover:underline';
   return (
-    <div className="px-40 bg-navbarBackground h-[90px]">
+    <div className="px-40 fixed w-full bg-navbarBackground h-[90px] z-50">
       <div>
         {/* NAVTOP */}
 
@@ -54,26 +55,6 @@ const Navbar = () => {
 
         <div className="flex justify-between items-center">
           <img src={logo} alt="daraz_logo" className="h-12" />
-
-          {/* <div className=" relative flex items-center font-bold px-2 py-1 rounded-md hover:bg-[#cc4b00] cursor-pointer text-white group">
-            <span>Categories</span>
-            <MdKeyboardArrowDown className="text-xl mt-1 group-hover:hidden " />
-            <MdKeyboardArrowUp className="text-xl mt-1 hidden group-hover:block" />
-            <div className=" absolute top-[46px] bg-red-100 font-semibold text-slate-500 text-sm">
-              <p>Elictronic Deviced</p>
-              <p>Electronic Accessories</p>
-              <p>TV & Home Appliances</p>
-              <p>Health & Beuty</p>
-              <p>Babies & Toys</p>
-              <p>Groceries & Pets</p>
-              <p>Home & LifeStyle</p>
-              <p>Women's Fashion</p>
-              <p>Men's Fashion</p>
-              <p>Watches & Accessries</p>
-              <p>Sprots & Outdoor</p>
-              <p>Automotive & Motorbike</p>
-            </div>
-          </div> */}
 
           {/* SEARCH */}
 

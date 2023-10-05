@@ -1,9 +1,12 @@
 import React from 'react';
-import ImageSlider from '../components/ImageSlider';
-import Categories from '../components/Categories';
-import QuickLinks from '../models/Landing/QuickLinks';
-import FlashSale from '../models/Landing/FlashSale';
-import DarazMall from '../models/Landing/DarazMall';
+import { ImageSlider, Categories } from '../components';
+import {
+  QuickLinks,
+  FlashSale,
+  DarazMall,
+  Collections,
+  JustForYou,
+} from '../models';
 
 const Landing = () => {
   return (
@@ -15,6 +18,8 @@ const Landing = () => {
       <QuickLinks />
       <FlashSale />
       <DarazMall />
+      <Collections />
+      <JustForYou />
     </div>
   );
 };

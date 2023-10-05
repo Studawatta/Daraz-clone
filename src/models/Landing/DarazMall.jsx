@@ -1,8 +1,6 @@
 import React from 'react';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
-import { echidna, echidnaLogo } from '../../assets';
-import { darazMall } from '../../data/darazMall';
-
+import { darazMall } from '../../data/darazMall/darazMall';
 const DarazMall = () => {
   return (
     <div className="mt-10">

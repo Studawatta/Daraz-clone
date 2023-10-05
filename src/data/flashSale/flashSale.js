@@ -2,11 +2,10 @@ import {
   coconut_scraper,
   dishwash_liquid,
   rubber_shoe,
-  underwear,
   smartwatch,
+  underwear,
   wallet,
-} from '../assets';
-
+} from './flashSaleImages';
 export const flashSale = [
   {
     photo: coconut_scraper,

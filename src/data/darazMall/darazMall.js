@@ -11,7 +11,7 @@ import {
   promateLogo,
   YFashion,
   YFashionLogo,
-} from '../assets';
+} from './darazMallImages';
 
 export const darazMall = [
   {

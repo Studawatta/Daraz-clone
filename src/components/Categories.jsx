@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { categories } from '../data/categories';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
+import { categories } from '../data/categories_drop/categoriesDrop';
 
 const Categories = () => {
   const [showSubCategory, setShowSubCategory] = useState(false);

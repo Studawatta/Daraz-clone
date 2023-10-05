@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  promotion,
   shieldIcon,
   vanIcon,
   returnIcon,
@@ -17,7 +16,9 @@ import {
   techIcon,
   payIcon,
   shippingIcon,
-} from '../../assets';
+} from '../../assets/icons';
+import promotion from '../../assets/images/promotion.png';
+
 const Divider = () => {
   return <div className="bg-slate-500 w-[1px] h-[40%]"></div>;
 };
