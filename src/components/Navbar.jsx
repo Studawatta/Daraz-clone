@@ -5,7 +5,6 @@ import { BiSearch } from 'react-icons/bi';
 import { BsPerson } from 'react-icons/bs';
 import { TfiWorld } from 'react-icons/tfi';
 import { PiShoppingCartSimpleLight } from 'react-icons/pi';
-import { MdKeyboardArrowDown, MdKeyboardArrowUp } from 'react-icons/md';
 
 const Navbar = () => {
   const navtopLinkStyle = ' cursor-pointer hover:text-orange-200';
@@ -13,7 +12,7 @@ const Navbar = () => {
     'flex items-center gap-2 font-bold px-2 py-1 rounded-md hover:bg-[#cc4b00] cursor-pointer text-white';
   const helpItemStyle = ' hover:text-navbarBackground hover:underline';
   return (
-    <div className="px-40 fixed w-full bg-navbarBackground h-[90px] z-50">
+    <div className="px-40 fixed top-0 w-full bg-navbarBackground h-[90px] z-50">
       <div>
         {/* NAVTOP */}
 
@@ -54,7 +53,9 @@ const Navbar = () => {
         {/* NAVBOTTOM */}
 
         <div className="flex justify-between items-center">
-          <img src={logo} alt="daraz_logo" className="h-12" />
+          {/* LOGO */}
+
+          <img src={logo} alt="daraz_logo" className="h-12 cursor-pointer" />
 
           {/* SEARCH */}
 

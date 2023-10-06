@@ -24,7 +24,9 @@ const Categories = () => {
             <div
               key={index}
               className={` hover:bg-[#f6f6f6] hover:text-navbarBackground flex items-center justify-between pr-4 ${
-                category === item.name ? 'text-navbarBackground' : ''
+                category === item.name
+                  ? 'text-navbarBackground bg-[#f6f6f6]'
+                  : ''
               }`}
               onMouseOver={() => {
                 setCategory(item.name);

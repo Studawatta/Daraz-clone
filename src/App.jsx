@@ -1,15 +1,15 @@
 import React from 'react';
 import { Landing } from './pages';
-import { Navbar } from './components';
+import { Footer, Navbar } from './components';
 
 const App = () => {
   return (
     <div>
       <Navbar />
-      <div className=" relative top-[90px] px-40 m-auto bg-[#f6f6f6]">
+      <div className="mt-[90px] px-40 pb-14 m-auto bg-[#f6f6f6]">
         <Landing />
-        <div className="h-60"></div>
       </div>
+      <Footer />
     </div>
   );
 };

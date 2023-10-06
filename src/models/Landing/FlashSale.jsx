@@ -6,7 +6,9 @@ const FlashSale = () => {
   const [minutes, setMinutes] = useState();
   const [seconds, setSeconds] = useState();
 
-  const countDownDate = new Date('Oct 5, 2023 20:31:00').getTime();
+  const [isEnded, setIsEnded] = useState(false);
+
+  const countDownDate = new Date('Oct 6, 2023 20:31:00').getTime();
 
   const x = setInterval(() => {
     const today = new Date().getTime();
@@ -16,10 +18,10 @@ const FlashSale = () => {
     setSeconds(Math.floor((distance % (1000 * 60)) / 1000));
 
     if (distance < 0) {
+      setIsEnded(true);
       clearInterval(x);
     }
   }, 1000);
-
   return (
     <div className="mt-10">
       <h1 className=" text-3xl">Flash Sale</h1>
@@ -30,18 +32,24 @@ const FlashSale = () => {
           <div className="flex gap-16 items-center">
             <span className=" text-navbarBackground">On Sale Now</span>
             {/* TIMMER */}
-            <div className="flex gap-4 items-center">
-              <span>Ending in</span>
-              <div className="h-fit w-8 text-center text-xl py-1 rounded-sm text-white font-semibold bg-navbarBackground">
-                {hours}
+            {isEnded ? (
+              <span className=" text-navbarBackground font-semibold">
+                Ended
+              </span>
+            ) : (
+              <div className="flex gap-4 items-center">
+                <span>Ending in</span>
+                <div className="h-fit w-8 text-center text-xl py-1 rounded-sm text-white font-semibold bg-navbarBackground">
+                  {hours}
+                </div>
+                <div className=" h-fit w-8 text-center text-xl py-1 rounded-sm text-white font-semibold bg-navbarBackground">
+                  {minutes}
+                </div>
+                <div className=" h-fit w-8 text-center text-xl py-1 rounded-sm text-white font-semibold bg-navbarBackground">
+                  {seconds}
+                </div>
               </div>
-              <div className=" h-fit w-8 text-center text-xl py-1 rounded-sm text-white font-semibold bg-navbarBackground">
-                {minutes}
-              </div>
-              <div className=" h-fit w-8 text-center text-xl py-1 rounded-sm text-white font-semibold bg-navbarBackground">
-                {seconds}
-              </div>
-            </div>
+            )}
           </div>
 
           <button className="border border-navbarBackground rounded-sm p-1 text-navbarBackground">
