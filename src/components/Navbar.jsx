@@ -12,14 +12,14 @@ const Navbar = () => {
     'flex items-center gap-2 font-bold px-2 py-1 rounded-md hover:bg-[#cc4b00] cursor-pointer text-white';
   const helpItemStyle = ' hover:text-navbarBackground hover:underline';
   return (
-    <div className="px-40 fixed top-0 w-full bg-navbarBackground h-[90px] z-50">
+    <div className="px-2 xl:px-40 fixed top-0 w-full bg-navbarBackground h-[60px] sm:h-[90px] z-50">
       <div>
         {/* NAVTOP */}
 
         <div className="flex justify-between  text-white font-semibold ">
           {/* NAVTOP LEFT */}
 
-          <div className=" flex gap-4 text-[12px] mt-1">
+          <div className=" flex gap-4 text-[9px] sm:text-[12px] mt-1">
             <span className={navtopLinkStyle}>Become a Seller</span>
             <span className={navtopLinkStyle}>Daraz Donates</span>
             <span className=" relative cursor-pointer group hover:text-orange-200">
@@ -44,8 +44,12 @@ const Navbar = () => {
 
           {/* NAVTOP RIGHT */}
 
-          <div className="flex gap-1 bg-[#cc4b00] p-2 rounded-[0_0_8px_8px] text-sm cursor-pointer hover:text-orange-200">
-            <img src={logoIcon} alt="daraz_logo" className="w-5 h-5" />
+          <div className="flex gap-1 bg-[#cc4b00] p-[2px] sm:p-2 rounded-[0_0_8px_8px] text-[10px] sm:text-sm cursor-pointer hover:text-orange-200">
+            <img
+              src={logoIcon}
+              alt="daraz_logo"
+              className="w-4 h-4 sm:h-5 sm:w-5"
+            />
             <span className={navtopLinkStyle}>Save More on App</span>
           </div>
         </div>
@@ -55,26 +59,30 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* LOGO */}
 
-          <img src={logo} alt="daraz_logo" className="h-12 cursor-pointer" />
+          <img
+            src={logo}
+            alt="daraz_logo"
+            className="h-6 sm:h-12 cursor-pointer"
+          />
 
           {/* SEARCH */}
 
-          <div className="flex items-center pl-4 pr-2  h-fit w-3/5 rounded-xl overflow-hidden bg-white">
+          <div className="flex items-center text-[10px] sm:text-base pl-2 pr-1 sm:pl-4 sm:pr-2  h-fit w-3/5 rounded-xl overflow-hidden bg-white">
             <input
               type="text"
               placeholder="Search in Daraz"
-              className="w-full h-10 focus:outline-none"
+              className="w-full sm:h-10 h-6 focus:outline-none"
             />
-            <div className="bg-red-100 px-3 py-1  rounded-md text-xl text-navbarBackground cursor-pointer">
+            <div className="bg-red-100 px-1 py-[2px] sm:px-3 sm:py-1  rounded-md sm:text-xl text-navbarBackground cursor-pointer">
               <BiSearch />
             </div>
           </div>
 
           {/* LOGIN SIGNUP */}
 
-          <div className="flex text-sm items-center text-white  gap-2">
+          <div className="flex text-[10px] sm:text-sm items-center text-white  gap-2">
             <div className={navbottomLinkStyle}>
-              <BsPerson className=" text-2xl" />
+              <BsPerson className=" text-lg sm:text-2xl" />
               <span>Login</span>
             </div>
             <div className="h-3 border"></div>
@@ -86,11 +94,11 @@ const Navbar = () => {
           {/* LANGUAGE */}
 
           <div className={navbottomLinkStyle}>
-            <TfiWorld className="text-xl" />
+            <TfiWorld className="sm:text-xl" />
             <select
               name=""
               id=""
-              className=" bg-transparent font-bold focus:outline-none hover:"
+              className=" bg-transparent font-bold focus:outline-none text-sm sm:text-base"
             >
               <option value="">En</option>
             </select>
@@ -99,7 +107,7 @@ const Navbar = () => {
           {/* CART */}
 
           <div className={navbottomLinkStyle}>
-            <PiShoppingCartSimpleLight className="text-3xl" />
+            <PiShoppingCartSimpleLight className="text-xl sm:text-3xl" />
           </div>
         </div>
       </div>

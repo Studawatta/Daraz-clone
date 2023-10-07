@@ -24,7 +24,7 @@ const FlashSale = () => {
   }, 1000);
   return (
     <div className="mt-10">
-      <h1 className=" text-3xl">Flash Sale</h1>
+      <h1 className=" text-xl sm:text-3xl">Flash Sale</h1>
       {/* CONTAINER */}
       <div className="bg-white mt-4 rounded-lg">
         {/* CONTAINER TOP */}
@@ -52,7 +52,7 @@ const FlashSale = () => {
             )}
           </div>
 
-          <button className="border border-navbarBackground rounded-sm p-1 text-navbarBackground">
+          <button className="border border-navbarBackground rounded-sm p-1 text-navbarBackground text-xs sm:text-base">
             SHOP MORE
           </button>
         </div>
@@ -65,19 +65,26 @@ const FlashSale = () => {
               key={index}
               className=" pl-2 text-sm hover:shadow-[0_3px_5px_#b3b3b3] rounded-sm cursor-pointer"
             >
-              <img src={item.photo} alt="photo" className="w-44 h-44" />
-              <p className="text-ellipsis line-clamp-2 w-full font-semibold">
+              <img
+                src={item.photo}
+                alt="photo"
+                className="w-14 h-14 sm:w-28 sm:h-28 lg:w-44 lg:h-44"
+              />
+              <p className="text-ellipsis line-clamp-2 w-full font-semibold text-[10px] sm:text-sm">
                 {item.desc}
               </p>
-              <span className=" text-navbarBackground text-lg">
+              <span className=" text-navbarBackground sm:file:text-lg">
                 Rs.{Math.round(item.price - (item.discount / 100) * item.price)}
               </span>
               <p className="text-[12px]">
-                <span className=" line-through text-slate-400">
+                <span className=" line-through text-slate-400 text-[8px] sm:text-sm">
                   Rs.
                   {item.price}
                 </span>
-                <span className="ml-1"> -{item.discount}%</span>
+                <span className="ml-1 sm:text-sm text-[8px]">
+                  {' '}
+                  -{item.discount}%
+                </span>
               </p>
             </div>
           ))}

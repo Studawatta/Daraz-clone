@@ -11,7 +11,7 @@ import {
 const Landing = () => {
   return (
     <div>
-      <div className="flex pt-6 gap-[10px] justify-between">
+      <div className="flex pt-6 gap-[10px] justify-between ">
         <Categories />
         <ImageSlider />
       </div>

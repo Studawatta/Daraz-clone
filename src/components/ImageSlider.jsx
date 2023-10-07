@@ -78,7 +78,7 @@ const ImageSlider = () => {
   });
 
   return (
-    <div className=" relative bg-red-500 w-full h-[340px] rounded-lg select-none overflow-hidden ">
+    <div className=" relative bg-red-500 w-full lg:h-[340px] rounded-lg select-none overflow-hidden ">
       {/* SLIDE IMAGES */}
       <img
         src={slide01}

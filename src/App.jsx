@@ -6,7 +6,7 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <div className="mt-[90px] px-40 pb-14 m-auto bg-[#f6f6f6]">
+      <div className="mt-[60px] sm:mt-[90px] xl:px-40 pb-14 m-auto bg-[#f6f6f6] w-full min-w-full">
         <Landing />
       </div>
       <Footer />
