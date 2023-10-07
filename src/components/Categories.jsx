@@ -11,7 +11,7 @@ const Categories = () => {
       {/* CATEGORY CONTAINER */}
 
       <div
-        className="relative w-[240px] h-[340px] flex items-center shadow-[0_0_3px_gray] rounded-lg bg-white text-[13px] text-gray-500"
+        className="relative w-[85px] sm:w-[180px] lg:w-[240px] h-[148px] sm:h-[300px] lg:h-[340px] flex items-center shadow-[0_0_3px_gray] rounded-lg bg-white text-[6px] sm:text-[11px] lg:text-[13px] text-gray-500 font-bold sm:font-normal"
         onMouseLeave={() => {
           setShowSubCategory(false);
           setCategory('');
@@ -23,7 +23,7 @@ const Categories = () => {
           {categories.map((item, index) => (
             <div
               key={index}
-              className={` hover:bg-[#f6f6f6] hover:text-navbarBackground flex items-center justify-between pr-4 ${
+              className={` hover:bg-[#f6f6f6] hover:text-navbarBackground m-0 flex items-center justify-between pr-0 sm:pr-4 ${
                 category === item.name
                   ? 'text-navbarBackground bg-[#f6f6f6]'
                   : ''
@@ -33,7 +33,7 @@ const Categories = () => {
                 setShowSubCategory(true);
               }}
             >
-              <p className=" cursor-pointer w-full px-4 py-1 flex justify-between items-center   ">
+              <p className=" cursor-pointer mt-[-5px] sm:mt-0 w-full px-[2px] sm:px-4 py-1 flex justify-between items-center   ">
                 {item.name}
               </p>
               <MdOutlineKeyboardArrowRight

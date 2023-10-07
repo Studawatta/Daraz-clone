@@ -19,13 +19,13 @@ import {
 import { logoIcon } from '../assets/icons';
 
 const Footer = () => {
-  const subHead = ' text-2xl text-navbarBackground mb-3';
+  const subHead = '  text-sm sm:text-2xl text-navbarBackground mb-3';
   const linkContStyle = 'flex flex-col gap-1 ';
   const linkStyle =
-    'text-sm font-medium text-slate-800 cursor-pointer hover:underline';
-  const iconStyle = 'w-6 h-6 cursor-pointer';
+    ' text-xs sm:text-sm font-medium text-slate-800 cursor-pointer hover:underline';
+  const iconStyle = 'sm:w-6 sm:h-6 w-4 h-4 cursor-pointer';
   return (
-    <div className=" bg-[#dadad7] px-40 pt-10 pb-14 flex justify-between   ">
+    <div className=" bg-[#dadad7] xl:px-40 px-2 pt-10 pb-14 flex justify-between   ">
       {/* COL_01 */}
       <div>
         {/* CUSTOMER_CARE */}
@@ -67,36 +67,48 @@ const Footer = () => {
         {/* DARAZ_INTERNATIONAL */}
         <div className={linkContStyle}>
           <h1 className={subHead}>Daraz International</h1>
-          <div className="grid grid-cols-2 gap-y-2">
+          <div className="grid sm:grid-cols-2 grid-cols-3 gap-y-2">
             <div className="flex items-center gap-1">
               <img src={pakistanFlag} alt="flag" className={iconStyle} />
-              <span className={linkStyle}>Pakistan</span>
+              <span className={`${linkStyle} hidden sm:block`}>Pakistan</span>
             </div>
             <div className="flex items-center gap-1">
               <img src={bangladeshFlag} alt="flag" className={iconStyle} />
-              <span className={linkStyle}>Bangladesh</span>
+              <span className={`${linkStyle} hidden sm:block`}>Bangladesh</span>
             </div>
             <div className="flex items-center gap-1">
               <img src={srilankaFlag} alt="flag" className={iconStyle} />
-              <span className={linkStyle}>Sri Lanka</span>
+              <span className={`${linkStyle} hidden sm:block`}>Sri Lanka</span>
             </div>
             <div className="flex items-center gap-1">
               <img src={myanmarFlag} alt="flag" className={iconStyle} />
-              <span className={linkStyle}>Myanmar</span>
+              <span className={`${linkStyle} hidden sm:block`}>Myanmar</span>
             </div>
             <div className="flex items-center gap-1">
               <img src={nepalFlag} alt="flag" className={iconStyle} />
-              <span className={linkStyle}>Nepal</span>
+              <span className={`${linkStyle} hidden sm:block`}>Nepal</span>
             </div>
           </div>
         </div>
         {/* PAYMENT_METHODS */}
         <div>
           <h1 className={`${subHead} mt-10`}>Payment Methods</h1>
-          <div className="flex gap-4">
-            <img src={cashOnDelivery} alt="payment" className="w-14 h-10" />
-            <img src={visaCard} alt="payment" className="w-14 h-10" />
-            <img src={masterCard} alt="payment" className="w-14 h-10" />
+          <div className="flex sm:gap-4 gap-1">
+            <img
+              src={cashOnDelivery}
+              alt="payment"
+              className="lg:w-14 lg:h-10 sm:w-10 sm:h-8 w-6 h-4"
+            />
+            <img
+              src={visaCard}
+              alt="payment"
+              className="lg:w-14 lg:h-10 sm:w-10 sm:h-8 w-6 h-4"
+            />
+            <img
+              src={masterCard}
+              alt="payment"
+              className="lg:w-14 lg:h-10 sm:w-10 sm:h-8 w-6 h-4"
+            />
           </div>
         </div>
       </div>
@@ -104,19 +116,19 @@ const Footer = () => {
       {/* COL_04 */}
 
       <div>
-        <img src={qr} alt="QR" className="w-24 h-24" />
+        <img src={qr} alt="QR" className="sm:w-24 sm:h-24 w-12 h-12" />
         <div className="flex mt-4 items-center cursor-pointer">
-          <img src={logoIcon} alt="logo" className="w-10 h-10" />
-          <p className="flex flex-col text-navbarBackground">
+          <img src={logoIcon} alt="logo" className="sm:w-10 sm:h-10 w-5 h-5" />
+          <p className="flex flex-col text-navbarBackground sm:text-base text-[8px]">
             <span> Happy Shopping</span>
-            <span className="text-xs text-black hover:underline">
+            <span className=" text-[6px] sm:text-xs text-black hover:underline">
               Download App
             </span>
           </p>
         </div>
         <div>
           <h1 className={`${subHead} mt-8`}>Follow Us</h1>
-          <div className="flex gap-2">
+          <div className="grid sm:grid-cols-4 grid-cols-2 sm:gap-4 gap-y-2">
             <img src={facebook} alt="facebook" className={iconStyle} />
             <img src={twitter} alt="twitter" className={iconStyle} />
             <img src={instagram} alt="instagram" className={iconStyle} />

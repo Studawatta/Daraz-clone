@@ -25,19 +25,19 @@ const Divider = () => {
 
 const QuickLinks = () => {
   const topLinkStyle = 'flex items-center gap-1 cursor-pointer ';
-  const topLinkIconStyle = 'w-5 h-5';
+  const topLinkIconStyle = ' w-3 h-3 sm:w-4 sm:h-4 lg:w-5 lg:h-5';
   const bottomLinkStyle =
     'flex flex-col items-center justify-center cursor-pointer';
-  const bottomLinkIconStyle = 'w-20 h-20';
+  const bottomLinkIconStyle = ' w-6 h-6 sm:w-14 sm:h-14 lg:w-20 lg:h-20';
   return (
-    <div className="mt-10">
+    <div className="sm:mt-10 mt-6">
       {/* PROMOTION */}
-      <div className="h-40 w-full rounded-3xl overflow-hidden cursor-pointer">
+      <div className="h-20 sm:h-40 w-full rounded-3xl overflow-hidden cursor-pointer">
         <img src={promotion} alt="" className="h-full w-full object-cover " />
       </div>
       {/* TOP LINKS */}
 
-      <div className="w-full h-10 mt-3 bg-[#ffefe6] hover:bg-[#ffdfcc] rounded-lg flex justify-between items-center px-4">
+      <div className="w-full h-8 sm:h-10 mt-3 text-[5px] sm:text-[12px] bg-[#ffefe6] hover:bg-[#ffdfcc] rounded-lg flex justify-between items-center px-4">
         <div className={topLinkStyle}>
           <img src={shieldIcon} alt="Icon" className={topLinkIconStyle} />
           <p>Fashion</p>
@@ -71,7 +71,7 @@ const QuickLinks = () => {
 
       {/* BOTTOM LINKS */}
 
-      <div className="bg-white h-36 mt-8 flex justify-between items-center px-4 rounded-lg">
+      <div className="bg-white h-14 sm:h-28 lg:h-36 mt-4 sm:mt-8 flex justify-between items-center px-4 rounded-lg text-[6px] sm:text-[10px] lg:text-base">
         <div className={bottomLinkStyle}>
           <img src={fashionIcon} alt="Icon" className={bottomLinkIconStyle} />
           <p>Fashion</p>
@@ -105,7 +105,7 @@ const QuickLinks = () => {
         <div className={bottomLinkStyle}>
           <img src={leisureIcon} alt="Icon" className={bottomLinkIconStyle} />
           <p>
-            Leisure &,
+            Leisure &
             <br /> Recreation
           </p>
         </div>
