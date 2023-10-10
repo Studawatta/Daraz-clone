@@ -1,5 +1,6 @@
 import React from 'react';
 import { justForYou } from '../../data/just_for_you/justForYou';
+import { Link } from 'react-router-dom';
 
 const JustForYou = () => {
   return (
@@ -7,16 +8,17 @@ const JustForYou = () => {
       <h1 className=" text-xl sm:text-3xl text-slate-700">Just For You</h1>
       <div className="py-4 w-full grid grid-cols-6 sm:gap-4 gap-2 ">
         {justForYou.map((item, index) => (
-          <div
+          <Link
+            to={`/item/${item.id}`}
             key={index}
-            className="  bg-white hover:shadow-[0_3px_5px_#b3b3b3] rounded-sm cursor-pointer"
+            className="  bg-white hover:shadow-[0_3px_5px_#b3b3b3] rounded-sm cursor-pointer flex flex-col items-center"
           >
             <img
               src={item.photo}
               alt="photo"
               className=" w-16 h-20 sm:w-32 sm:h-32 lg:w-44 lg:h-44"
             />
-            <div className="ml-2">
+            <div className="ml-2 w-full">
               <p className="text-ellipsis line-clamp-2 w-full font-semibold sm:text-base text-[8px]">
                 {item.desc}
               </p>
@@ -34,7 +36,7 @@ const JustForYou = () => {
                 </span>
               </p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

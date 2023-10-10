@@ -23,7 +23,7 @@ const Categories = () => {
           {categories.map((item, index) => (
             <div
               key={index}
-              className={` hover:bg-[#f6f6f6] hover:text-navbarBackground m-0 flex items-center justify-between pr-0 sm:pr-4 ${
+              className={` hover:bg-[#f6f6f6] hover:text-navbarBackground h-fit flex items-center justify-between pr-0 sm:pr-4 ${
                 category === item.name
                   ? 'text-navbarBackground bg-[#f6f6f6]'
                   : ''
@@ -33,11 +33,11 @@ const Categories = () => {
                 setShowSubCategory(true);
               }}
             >
-              <p className=" cursor-pointer mt-[-5px] sm:mt-0 w-full px-[2px] sm:px-4 py-1 flex justify-between items-center   ">
+              <p className=" cursor-pointer sm:mt-0 w-full px-[2px] sm:px-4 sm:py-1 py-[1px] flex justify-between items-center   ">
                 {item.name}
               </p>
               <MdOutlineKeyboardArrowRight
-                className={`text-2xl ${
+                className={`  sm:text-2xl ${
                   category === item.name ? 'block' : 'hidden'
                 } `}
               />
@@ -48,7 +48,7 @@ const Categories = () => {
         {/* SUBCATEGORY CONTAINER */}
 
         <div
-          className="w-[250px] absolute left-[240px] pl-[10px] z-20"
+          className=" w-[90px] sm:w-[190px] lg:w-[250px] absolute left-[80px] sm:left-[180px] lg:left-[240px] pl-[10px] z-20"
           onMouseOver={() => setShowSubCategory(true)}
           onMouseLeave={() => {
             setCategory('');
@@ -56,7 +56,7 @@ const Categories = () => {
           }}
         >
           <div
-            className={`  w-[240px] h-[340px] py-[10px] shadow-[0_0_3px_gray] rounded-lg bg-white text-[12px] text-gray-500
+            className={` w-[85px] sm:w-[180px] lg:w-[240px] h-[148px] sm:h-[300px] lg:h-[340px] py-[10px] shadow-[0_0_3px_gray] rounded-lg bg-white sm:text-[12px] text-gray-500
           ${showSubCategory ? 'block' : 'hidden'}
           `}
           >
@@ -66,7 +66,7 @@ const Categories = () => {
               selectedCategory.subCat.map((sub, index) => (
                 <p
                   key={index}
-                  className=" cursor-pointer w-full px-4 py-1 flex justify-between items-center hover:bg-slate-100 hover:text-navbarBackground "
+                  className=" cursor-pointer w-full sm:mt-0 mt-[-5px] sm:px-4 px-1 py-1 flex justify-between items-center hover:bg-slate-100 hover:text-navbarBackground "
                 >
                   {sub}
                 </p>

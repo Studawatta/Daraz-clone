@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { flashSale } from '../../data/flashSale/flashSale';
+import { Link } from 'react-router-dom';
 
 const FlashSale = () => {
   const [hours, setHours] = useState();
@@ -22,6 +23,7 @@ const FlashSale = () => {
       clearInterval(x);
     }
   }, 1000);
+
   return (
     <div className="mt-10">
       <h1 className=" text-xl sm:text-3xl">Flash Sale</h1>
@@ -61,7 +63,8 @@ const FlashSale = () => {
 
         <div className="py-4 w-full grid grid-cols-6 ">
           {flashSale.map((item, index) => (
-            <div
+            <Link
+              to="/item"
               key={index}
               className=" pl-2 text-sm hover:shadow-[0_3px_5px_#b3b3b3] rounded-sm cursor-pointer"
             >
@@ -86,7 +89,7 @@ const FlashSale = () => {
                   -{item.discount}%
                 </span>
               </p>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
