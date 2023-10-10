@@ -19,13 +19,13 @@ import {
 import { logoIcon } from '../assets/icons';
 
 const Footer = () => {
-  const subHead = '  text-sm sm:text-2xl text-navbarBackground mb-3';
+  const subHead = '  text-xs sm:text-2xl text-navbarBackground mb-3';
   const linkContStyle = 'flex flex-col gap-1 ';
   const linkStyle =
-    ' text-xs sm:text-sm font-medium text-slate-800 cursor-pointer hover:underline';
+    ' text-[8px] sm:text-sm font-medium text-slate-800 cursor-pointer hover:underline';
   const iconStyle = 'sm:w-6 sm:h-6 w-4 h-4 cursor-pointer';
   return (
-    <div className=" bg-[#dadad7] xl:px-40 px-2 pt-10 pb-14 flex justify-between   ">
+    <div className=" bg-[#dadad7] xl:px-40 px-2 mt-[60px] sm:mt-[90px] flex justify-between pt-10 pb-14  ">
       {/* COL_01 */}
       <div>
         {/* CUSTOMER_CARE */}
@@ -133,7 +133,6 @@ const Footer = () => {
             <img src={twitter} alt="twitter" className={iconStyle} />
             <img src={instagram} alt="instagram" className={iconStyle} />
             <img src={youtube} alt="youtube" className={iconStyle} />
-            {/* <img src={web} alt="web" className={iconStyle} /> */}
           </div>
         </div>
       </div>

@@ -5,6 +5,7 @@ import { BiSearch } from 'react-icons/bi';
 import { BsPerson } from 'react-icons/bs';
 import { TfiWorld } from 'react-icons/tfi';
 import { PiShoppingCartSimpleLight } from 'react-icons/pi';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const navtopLinkStyle = ' cursor-pointer hover:text-orange-200';
@@ -58,12 +59,13 @@ const Navbar = () => {
 
         <div className="flex justify-between items-center">
           {/* LOGO */}
-
-          <img
-            src={logo}
-            alt="daraz_logo"
-            className="h-6 sm:h-12 cursor-pointer"
-          />
+          <Link to="/">
+            <img
+              src={logo}
+              alt="daraz_logo"
+              className="h-6 sm:h-12 cursor-pointer"
+            />
+          </Link>
 
           {/* SEARCH */}
 
