@@ -17,9 +17,15 @@ import {
   item16,
   item17,
   item18,
-} from './justForYouImages';
+  item19,
+  item20,
+  item21,
+  item22,
+  item23,
+  item24,
+} from './images';
 
-export const justForYou = [
+export const items = [
   {
     id: 1,
     photo: item01,
@@ -145,5 +151,47 @@ export const justForYou = [
     desc: 'Home Button Sticker Key Finger Print ID Touch ID',
     price: 1000,
     discount: 62,
+  },
+  {
+    id: 19,
+    photo: item19,
+    desc: 'SS™ Stainless Steel Coconut Scraper',
+    price: 4500,
+    discount: 52,
+  },
+  {
+    id: 20,
+    photo: item20,
+    desc: '100% GENUINE 4L Dish Wash Liquid Lemon Dishwashing Liquid Quick & Sparkling - Mega Deal',
+    price: 1500,
+    discount: 59,
+  },
+  {
+    id: 21,
+    photo: item21,
+    desc: 'Rubber Shoe-Kadam Black-Waterproof',
+    price: 1499,
+    discount: 20,
+  },
+  {
+    id: 22,
+    photo: item22,
+    desc: '	2023 New i8 Pro Max Smartwatch 2022 Series 7 Smart Watch i7 Bluetooth Call Heart Rate 1.75 Inch Full',
+    price: 2950,
+    discount: 5,
+  },
+  {
+    id: 23,
+    photo: item23,
+    desc: '4 Pcs Pack Romeo Mens underwear boxer',
+    price: 2100,
+    discount: 37,
+  },
+  {
+    id: 24,
+    photo: item24,
+    desc: '2023 Fashion Men Wallets Small Wallet Men Money Purse Coin Zipper Short Male Wallet Card Holder Slim Purse Money Wallet',
+    price: 2790,
+    discount: 71,
   },
 ];

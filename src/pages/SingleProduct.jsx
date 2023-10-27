@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from 'react';
 
-import wallet300 from '../data/images/wallet300.jpg';
 import { HiOutlinePlusSm, HiOutlineMinusSm } from 'react-icons/hi';
 import { useParams } from 'react-router-dom';
-import { justForYou } from '../data/just_for_you/justForYou';
+
+import { items } from '../data/items/items';
+
 const SingleProduct = () => {
   const [quentity, setQuentity] = useState(1);
 
   const { id } = useParams();
   const itemId = parseInt(id);
 
-  const item = justForYou.find((item) => item.id === itemId);
+  const item = items.find((item) => item.id === itemId);
   console.log(item);
 
   useEffect(() => {
