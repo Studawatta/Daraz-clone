@@ -16,6 +16,12 @@ import item15 from './item15.webp';
 import item16 from './item16.webp';
 import item17 from './item17.webp';
 import item18 from './item18.webp';
+import item19 from './item19.jpg';
+import item20 from './item20.jpg';
+import item21 from './item21.jpg';
+import item22 from './item22.jpg';
+import item23 from './item23.jpg';
+import item24 from './item24.jpg';
 
 export {
   item01,
@@ -36,4 +42,10 @@ export {
   item16,
   item17,
   item18,
+  item19,
+  item20,
+  item21,
+  item22,
+  item23,
+  item24,
 };

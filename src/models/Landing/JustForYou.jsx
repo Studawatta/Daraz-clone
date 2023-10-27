@@ -1,13 +1,14 @@
 import React from 'react';
-import { justForYou } from '../../data/just_for_you/justForYou';
 import { Link } from 'react-router-dom';
+import { items } from '../../data/items/items';
 
 const JustForYou = () => {
+  const justForYouItems = items.filter((item, index) => index < 18);
   return (
     <div className="mt-10">
       <h1 className=" text-xl sm:text-3xl text-slate-700">Just For You</h1>
       <div className="py-4 w-full grid grid-cols-6 sm:gap-4 gap-2 ">
-        {justForYou.map((item, index) => (
+        {justForYouItems.map((item, index) => (
           <Link
             to={`/item/${item.id}`}
             key={index}

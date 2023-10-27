@@ -7,7 +7,7 @@ import { TfiWorld } from 'react-icons/tfi';
 import { PiShoppingCartSimpleLight } from 'react-icons/pi';
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({ setShowCart, showCart }) => {
   const navtopLinkStyle = ' cursor-pointer hover:text-orange-200';
   const navbottomLinkStyle =
     'flex items-center gap-2 font-bold px-2 py-1 rounded-md hover:bg-[#cc4b00] cursor-pointer text-white';
@@ -109,7 +109,10 @@ const Navbar = () => {
           {/* CART */}
 
           <div className={navbottomLinkStyle}>
-            <PiShoppingCartSimpleLight className="text-xl sm:text-3xl" />
+            <PiShoppingCartSimpleLight
+              className="text-xl sm:text-3xl"
+              onClick={() => setShowCart(!showCart)}
+            />
           </div>
         </div>
       </div>

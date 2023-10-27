@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { flashSale } from '../../data/flashSale/flashSale';
 import { Link } from 'react-router-dom';
+import { items } from '../../data/items/items';
 
 const FlashSale = () => {
   const [hours, setHours] = useState();
@@ -10,6 +10,8 @@ const FlashSale = () => {
   const [isEnded, setIsEnded] = useState(false);
 
   const countDownDate = new Date('Oct 6, 2023 20:31:00').getTime();
+
+  const flashItems = items.filter((item, index) => index >= 18);
 
   const x = setInterval(() => {
     const today = new Date().getTime();
@@ -62,9 +64,9 @@ const FlashSale = () => {
         {/* CONTAINER BOTTOM */}
 
         <div className="py-4 w-full grid grid-cols-6 ">
-          {flashSale.map((item, index) => (
+          {flashItems.map((item, index) => (
             <Link
-              to="/item"
+              to={`/item/${item.id}`}
               key={index}
               className=" pl-2 text-sm hover:shadow-[0_3px_5px_#b3b3b3] rounded-sm cursor-pointer"
             >
