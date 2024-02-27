@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 import { HiOutlinePlusSm, HiOutlineMinusSm } from 'react-icons/hi';
 import { useParams } from 'react-router-dom';

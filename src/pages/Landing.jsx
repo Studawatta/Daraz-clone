@@ -1,4 +1,3 @@
-import React from 'react';
 import { ImageSlider, Categories } from '../components';
 import {
   QuickLinks,
