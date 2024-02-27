@@ -1,4 +1,3 @@
-import React from 'react';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import { darazMall } from '../../data/darazMall/darazMall';
 const DarazMall = () => {
