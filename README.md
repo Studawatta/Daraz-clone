@@ -1,8 +1,27 @@
-# React + Vite
+# Daraz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a clone of Daraz e-commerce web application front-end..
 
-Currently, two official plugins are available:
+## Run Locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Clone the project
+
+```bash
+  git clone git@github.com:Studawatta/Daraz-clone.git
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the application
+
+```bash
+  npm run dev
+```
+
+## Tech Stack
+
+React, TailwindCSS
